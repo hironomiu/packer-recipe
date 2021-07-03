@@ -26,7 +26,6 @@ build {
             "sudo systemctl enable mysqld.service",
             "sudo amazon-linux-extras install -y php7.4",
             "sudo wget -P /var/www/html https://ja.wordpress.org/wordpress-5.7.2-ja.tar.gz",
-            "sudo tar -xzvf /var/www/html/latest.tar.gz",
             "sudo tar -xzvf /var/www/html/wordpress-5.7.2-ja.tar.gz -C /var/www/html"
         ]
     }
