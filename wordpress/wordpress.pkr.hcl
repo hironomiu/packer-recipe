@@ -14,7 +14,7 @@ build {
 
     provisioner "shell"{
         inline = [
-            "sudo yum update",
+            "sudo yum -y update",
             "sudo amazon-linux-extras install -y nginx1",
             "sudo systemctl enable nginx",
             "sudo systemctl start nginx",
@@ -27,7 +27,7 @@ build {
             "sudo amazon-linux-extras install -y php7.4",
             "sudo wget -P /var/www/html https://ja.wordpress.org/wordpress-5.7.2-ja.tar.gz",
             "sudo tar -xzvf /var/www/html/latest.tar.gz",
-            "sudo tar -xzvf /var/www/html/wordpress-5.7.2-ja.tar.gz -C /var/www/html",
+            "sudo tar -xzvf /var/www/html/wordpress-5.7.2-ja.tar.gz -C /var/www/html"
         ]
     }
 }
