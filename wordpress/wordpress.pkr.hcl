@@ -15,9 +15,9 @@ build {
     provisioner "shell"{
         inline = [
             "sudo yum update",
-            "sudo amazon-linux-extras install -y nginx1"
+            "sudo amazon-linux-extras install -y nginx1",
             "sudo systemctl enable nginx",
-            "sudo systemctl start nginx"
+            "sudo systemctl start nginx",
             "sudo yum -y remove mariadb-libs",
             "sudo yum -y install https://dev.mysql.com/get/mysql80-community-release-el7-1.noarch.rpm",
             "sudo yum-config-manager –enable mysql80-community",
@@ -25,9 +25,9 @@ build {
             "sudo systemctl start mysqld.service",
             "sudo systemctl enable mysqld.service",
             "sudo amazon-linux-extras install -y php7.4",
-            "sudo wget -P /var/www/html https://ja.wordpress.org/wordpress-5.7.2-ja.tar.gz"
+            "sudo wget -P /var/www/html https://ja.wordpress.org/wordpress-5.7.2-ja.tar.gz",
             "sudo tar -xzvf /var/www/html/latest.tar.gz",
-            "sudo tar -xzvf /var/www/html/wordpress-5.7.2-ja.tar.gz -C /var/www/html"
+            "sudo tar -xzvf /var/www/html/wordpress-5.7.2-ja.tar.gz -C /var/www/html",
         ]
     }
 }
