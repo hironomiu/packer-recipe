@@ -1,6 +1,6 @@
 # packer-recipe
 
-[AWS:Nginx+PHP+MySQL+Wordpress](./wordpress)
+[AWS-Nginx-PHP-MySQL-Wordpress](./wordpress)
 
 ## cli install(mac)
 
