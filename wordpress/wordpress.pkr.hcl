@@ -61,6 +61,7 @@ build {
             "sudo chown root:root /etc/php-fpm.d/www.conf",
             "sudo chmod 644 /etc/nginx/nginx.conf",
             "sudo chown root:root /etc/nginx/nginx.conf",
+            "sudo systemctl restart php-fpm",
             "sudo systemctl restart nginx"
         ]
     }
